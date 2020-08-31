@@ -2,6 +2,8 @@ import "./card-list.styles.css";
 
 import React, { useEffect, useState } from "react";
 
+import { Card } from "../card/card.component";
+
 export const CardList = (props) => {
   const [monsters, setMonsters] = useState([]);
 
@@ -14,7 +16,7 @@ export const CardList = (props) => {
   return (
     <div className="card-list">
       {monsters.map((monster) => (
-        <h1 key={monster.id}>{monster.name}</h1>
+        <Card key={monster.id} monster={monster} />
       ))}
     </div>
   );
