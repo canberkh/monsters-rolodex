@@ -1,10 +1,11 @@
+/* eslint react/prop-types: 0 */
 import "./card-list.styles.css";
 
 import React, { useEffect, useState } from "react";
 
 import { Card } from "../card/card.component";
 
-export const CardList = (props) => {
+export const CardList = () => {
   const [monsters, setMonsters] = useState([]);
 
   useEffect(() => {

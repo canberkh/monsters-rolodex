@@ -1,6 +1,7 @@
+/* eslint react/prop-types: 0 */
 import "./card.styles.css";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 export const Card = (props) => {
   return (
